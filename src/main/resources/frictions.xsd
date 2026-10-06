@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://w3.org"
+           xmlns:tns="http://vladimir/soap"
+           targetNamespace="http://vladimir/soap"
+           elementFormDefault="qualified">
+
+    <xs:element name="ReduceFractionRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="numerator" type="xs:int"/>
+                <xs:element name="denominator" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="ReduceFractionResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="numerator" type="xs:int"/>
+                <xs:element name="denominator" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
